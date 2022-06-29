@@ -29,8 +29,8 @@ Once you have downloaded TwilioQuest, here are the steps you need to complete to
 - Join the TwilioQuest operation.
   - Open settings by clicking on the icon of 3 sliders at the top of the screen.
   - On the left, select "Operations".
-  - In the join code box, enter the code `TODO`, and click "Join Operation".
-  - Your character and XP will now be visible in the [leaderboard](TODO).
+  - In the join code box, enter the code ` birds-popular-indeed`, and click "Join Operation".
+  - Your character and XP will now be visible in the [leaderboard](https://www.twilio.com/quest/app/operations/Q1VJoMy3sCQCjADG1MrA).
 - Complete a mission, from any of the following:
   - The Javascript Test Lab
   - The Pythonic Temple
