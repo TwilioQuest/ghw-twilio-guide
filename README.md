@@ -105,7 +105,7 @@ The Dev Phone lets us test our Twilio applications using a Twilio number, rather
 
 To install the Dev Phone, follow [this guide](https://www.twilio.com/docs/labs/dev-phone).
 
-## Step 6: Installing `curl`
+###ßß Step 6: Installing `curl`
 
 The last step today is to install `curl`. `curl` is a command line tool for getting data from URLs, and we'll use it to interact with the Twilio REST API.
 
@@ -113,7 +113,7 @@ You can learn more about `curl` [here](https://curl.se/).
 
 To install `curl`, follow [this guide](https://everything.curl.dev/get).
 
-## Step 7: Daily challenge complete! Time to submit.
+### Step 7: Daily challenge complete! Time to submit.
 
 You've completed the challenge for the day, high five! To submit the challenge, type `curl --version` into your terminal, and submit a screenshot.
 
@@ -127,17 +127,17 @@ Today you will:
 - Assign it to your Twilio number.
 - Make a call using Dev Phone.
 
-## Step 1: Create a TwiML bin to handle a phone call
+###ß Step 1: Create a TwiML bin to handle a phone call
 
 A TwiML bin is a container for TwiML. We can fill the bin with TwiML to program Twilio to do certain actions, and then connect the bin to our phone number. Follow the instructions [here](https://www.twilio.com/docs/runtime/tutorials/twiml-bins#create-a-new-twiml-bin) to create a new TwiML bin to respond to a phone call with "hello world".
 
-## Step 2: Link your TwiML bin to your Twilio number
+### Step 2: Link your TwiML bin to your Twilio number
 
 Now that we have some TwiML to say "hello world", we need to connect it to our phone number. Choose one of the two numbers you purchased in day 1, and follow [this guide](https://www.twilio.com/docs/runtime/tutorials/twiml-bins#wire-your-twiml-bin-up-to-an-incoming-phone-call) to do that.
 
 Remember which number you chose! In the next step, we will use the other number.
 
-## Step 3: Test it using Dev Phone
+###ß Step 3: Test it using Dev Phone
 
 Open your terminal and start the Dev Phone with `twilio dev-phone`.
 
@@ -145,7 +145,7 @@ After starting up, the terminal will tell you the address of the Dev Phone inter
 
 From here, you can select a phone number. Choose the number that you didn't use in the previous step. The Dev Phone will then show you a dialler to call a number. Enter your other phone number, the one with the TwiML bin, and hit call. You should hear "Hello World" spoken back to you.
 
-## Step 4: Daily challenge complete! Time to submit.
+###ß Step 4: Daily challenge complete! Time to submit.
 
 You've completed day 2, high five! To submit, take a screenshot of your Dev Phone call history.
 
