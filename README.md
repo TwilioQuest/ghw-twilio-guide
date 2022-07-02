@@ -203,17 +203,17 @@ We can use this example from the docs almost as is, there is just a couple of th
 
 It will be easier to edit the `curl` command if you copy it into a text editor.
 
-To set your environment variables:
+**To set your environment variables:**
 
 - Go to your [Twilio console](https://console.twilio.com), and check out account info. Copy the account SID and auth token.
 - Follow [this guide](https://www.twilio.com/blog/2017/01/how-to-set-environment-variables.html) to set those as environment variables in your shell, for MacOS, Linux, and Windows.
 
-To replace the numbers:
+**To replace the numbers:**
 
 - Set the `To` number to the Twilio phone number that you are using in the Dev Phone. NOT the number that we have used for the TwiML bin earlier in the week.
 - Set the `From` number to be the Twilio phone number that you have used for the TwiML bins in previous days.
 
-To replace the URL:
+**To replace the URL:**
 
 - In day 2, we set up a TwiML bin to say "hello world" when we called our phone number. We can reuse that TwiML bin for our outbound call, so that when we phone someone, it will say "hello world".
 - In your [Twilio console](https://console.twilio.com), find the TwiML bin you created yesterday. At the top of the page, you will see a `url` field. Copy this URL.
