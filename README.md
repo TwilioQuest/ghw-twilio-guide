@@ -151,11 +151,83 @@ You've completed day 2, high five! To submit, take a screenshot of your Dev Phon
 
 ## Day 3: Make your first outbound phone call using `curl`.
 
+Yesterday, we set up our Twilio number to RECEIVE phone calls. Today we will make an outbound phone call, from our Twilio number.
+
 Today you will:
 
-- Create a TwiML bin that contains a script for a phone call.
 - Learn how to use `curl` to make HTTP requests.
+- Build a `curl` request that will make a phone call using the Twilio API.
 - Make a call from your Twilio number to your Dev Phone.
+
+### Step 1: Check out the Twilio documentation on making calls
+
+The [Twilio documentation for making calls](https://www.twilio.com/docs/voice/make-calls) offers examples in several languages and tools. This is useful if you are using the Twilio API from your favourite programming language, but it also has examples in `curl`, making it easy for us to test each endpoint from the command line.
+
+In the code editor on the right of the page, select `curl` to bring up the example. It will look like this:
+
+```
+curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Calls.json \
+--data-urlencode "Url=http://demo.twilio.com/docs/voice.xml" \
+--data-urlencode "To=+14155551212" \
+--data-urlencode "From=+15017122661" \
+-u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN
+```
+
+Let's break this down.
+
+### Step 2: Understanding the `curl` command
+
+Let's go through the example command bit by bit.
+
+- `curl`: we're using the command curl! That bit is easy.
+- `-X POST`: `-X` specifies the method for the request to the URL. By default, `curl` makes a `GET` request, to simply fetch the contents of the URL. Here we are making a `POST` request, as we want to send some data to the Twilio API with our request.
+- `https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Calls.json`: this is the URL we are sending the request to, it is an endpoint on the Twilio API for making calls.
+  - `$TWILIO_ACCOUNT_SID`: This is not actually part of the URL, we can tell from the leading `$` that this is a variable that our command line will substitute when it makes the request. We will have to set this variable before we make the request, we'll deal with that in the next step!
+- `--data-urlencode`: This lets us encode data for `curl` to send in the `POST` body. We are sending 3 pieces of data to the API with our POST request:
+  - `Url`: This is the URL of the TwiML that we want to use in the call. We can use a TwiML bin URL for this!
+  - `To`: This is the number we want to call, we'll set this to the number of our Dev Phone.
+  - `From`: This is the number we want to use to make the call. This will be our other Twilio number.
+- `-u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN`: It's those variables again! `-u` sets the authentication method. This is where we tell the Twilio API to make the request from our account. There are two variables here:
+  - `TWILIO_ACCOUNT_SID`: This is the unique identifier for our account, kind of like a username.
+  - `TWILIO_AUTH_TOKEN`: The auth token is kind of like the password for our account when we make an API request. You want to keep this secret!
+
+Phew! That was a lot. Some of that might be confusing. Don't forget that you can ask questions, or ask for help, in the `#twilio` channel in the MLH Discord.
+
+### Step 3: Building our `curl` request
+
+We can use this example from the docs almost as is, there is just a couple of things we need to do:
+
+1. Set our `TWILIO_ACCOUNT_SID` and `TWILIO_AUTH_TOKEN` variables.
+2. Replace the `To` and `From` numbers with our Twilio numbers.
+3. Replace the `Url` with the URL of our TwiML bin.
+
+It will be easier to edit the `curl` command if you copy it into a text editor.
+
+To set your environment variables:
+
+- Go to your [Twilio console](https://console.twilio.com), and check out account info. Copy the account SID and auth token.
+- Follow [this guide](https://www.twilio.com/blog/2017/01/how-to-set-environment-variables.html) to set those as environment variables in your shell, for MacOS, Linux, and Windows.
+
+To replace the numbers:
+
+- Set the `To` number to the Twilio phone number that you are using in the Dev Phone. NOT the number that we have used for the TwiML bin earlier in the week.
+- Set the `From` number to be the Twilio phone number that you have used for the TwiML bins in previous days.
+
+To replace the URL:
+
+- In day 2, we set up a TwiML bin to say "hello world" when we called our phone number. We can reuse that TwiML bin for our outbound call, so that when we phone someone, it will say "hello world".
+- In your [Twilio console](https://console.twilio.com), find the TwiML bin you created yesterday. At the top of the page, you will see a `url` field. Copy this URL.
+- Set the `Url` in our `curl` request to the TwiML bin URL.
+
+Once you've done those three things, our `curl` request is ready to go!
+
+### Step 4: Make the request
+
+Make sure your Twilio Dev Phone is running and open it in your browser. In a new terminal, paste the edited `curl` command, and press enter. Your Dev Phone should ring and you should hear "hello world".
+
+### Step 5: Daily challenge complete! Time to submit.
+
+Congratulations on completing the day 3 challenge! To submit, take a screenshot of your Dev Phone call log to show you received the call.
 
 ## Day 4: Setting up a web application with ngrok and webhooks.
 
