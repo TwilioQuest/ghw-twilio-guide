@@ -1,6 +1,6 @@
 # Getting started with Twilio at MLH Init
 
-Hello hackers! Learn how to use REST APIs with Twilio during INIT by following the steps in this repository. You can submit the tasks each day at [https://init.mlh.io](https://init.mlh.io). In this README, you will find instructions to follow for each day.
+Hello hackers! Learn how to use REST APIs with Twilio during INIT by following the steps in this repository. You can submit the challenges each day at [https://init.mlh.io](https://init.mlh.io). In this README, you will find instructions to follow for each day.
 
 ## Contents
 
@@ -58,28 +58,104 @@ During MLH INIT, you will learn how to **send and receive text messages** and **
 
 ## Day 1: Get ready to hack with Twilio.
 
-To complete the week's tasks, there's some setup we need to do first. Today you will:
+To complete the week's challenges, there's some setup we need to do first. Today you will:
 
 - Create and upgrade your Twilio account with some free credit.
 - Use your free credit to buy two Twilio numbers.
-- Set up the Twilio DevPhone to help test your Twilio number.
-- Install CuRL to make requests to the Twilio API from the command line.
+- Set up the Twilio Dev Phone to help test your Twilio number.
+- Install `curl` to make requests to the Twilio API from the command line.
 
-## Day 2: Receive your first phone call using TwiML bins and DevPhone.
+### Step 1: Create an account
+
+If you don't already have a Twilio account, create one by visiting [this link](https://www.twilio.com/try-twilio?promo=mlh-twilio).
+
+### Step 2: Upgrading your account
+
+When you create an account with the above link, you will create a trial account. To complete the Twilio challenges during INIT, you will need to use 2 Twilio numbers, which requires an upgraded account. To upgrade your account:
+
+- Visit the #twilio channel in the MLH Discord.
+- Check the pinned messages for the channel.
+- Find the promo code shared in the pinned message.
+- Follow [this guide](https://www.twilio.com/blog/apply-promo-code) to apply the promo code to your account.
+
+When you use this code, you will also get some free credit. If you did not create a new account, and are using an account you created in the past, you can still use this code to get extra credit to complete the INIT daily challenge.
+
+### Step 3: Buy Two Twilio numbers
+
+With your free credit, you can now buy your first Twilio numbers! With a Twilio number, you can send and receive calls and SMS.
+
+We will buy two numbers:
+
+- One number to use in our application.
+- One number to test the other number, using the Dev Phone.
+
+To buy a number, follow [this guide](https://support.twilio.com/hc/en-us/articles/223135247-How-to-Search-for-and-Buy-a-Twilio-Phone-Number-from-Console).
+
+Buy a number with both SMS and Voice capabilities, so you can send/receive messages and phone calls. Phone numbers may not be available in your country, or may require extra identity documentation for your country. If this is the case, you can buy US numbers. This won't cost you any extra during testing, as we'll be using the Dev Phone to call/message the number, and not your local mobile number.
+
+### Step 4: Installing the Twilio CLI
+
+The Twilio CLI makes it easy to use Twilio from our command line interface. We will need the Twilio CLI to use the Dev Phone, which makes it easy (and free) to test our Twilio services from anywhere in the world.
+
+To install the CLI, follow [this guide](https://www.twilio.com/docs/twilio-cli/quickstart).
+
+### Step 5: Installing the Dev Phone
+
+The Dev Phone lets us test our Twilio applications using a Twilio number, rather than your own mobile number. This means you can test your applications using only your Twilio credit, from anywhere in the world.
+
+To install the Dev Phone, follow [this guide](https://www.twilio.com/docs/labs/dev-phone).
+
+## Step 6: Installing `curl`
+
+The last step today is to install `curl`. `curl` is a command line tool for getting data from URLs, and we'll use it to interact with the Twilio REST API.
+
+You can learn more about `curl` [here](https://curl.se/).
+
+To install `curl`, follow [this guide](https://everything.curl.dev/get).
+
+## Step 7: Daily challenge complete! Time to submit.
+
+You've completed the challenge for the day, high five! To submit the challenge, type `curl --version` into your terminal, and submit a screenshot.
+
+## Day 2: Receive your first phone call using TwiML bins and Dev Phone.
+
+[TwiML](https://www.twilio.com/docs/glossary/what-is-twilio-markup-language-twiml) (Twilio Markup Language) is a special markup language which you can use to program actions in Twilio.
 
 Today you will:
 
 - Create a TwiML bin to handle a phone call.
 - Assign it to your Twilio number.
-- Make a call using DevPhone.
+- Make a call using Dev Phone.
 
-## Day 3: Make your first outbound phone call using CuRL.
+## Step 1: Create a TwiML bin to handle a phone call
+
+A TwiML bin is a container for TwiML. We can fill the bin with TwiML to program Twilio to do certain actions, and then connect the bin to our phone number. Follow the instructions [here](https://www.twilio.com/docs/runtime/tutorials/twiml-bins#create-a-new-twiml-bin) to create a new TwiML bin to respond to a phone call with "hello world".
+
+## Step 2: Link your TwiML bin to your Twilio number
+
+Now that we have some TwiML to say "hello world", we need to connect it to our phone number. Choose one of the two numbers you purchased in day 1, and follow [this guide](https://www.twilio.com/docs/runtime/tutorials/twiml-bins#wire-your-twiml-bin-up-to-an-incoming-phone-call) to do that.
+
+Remember which number you chose! In the next step, we will use the other number.
+
+## Step 3: Test it using Dev Phone
+
+Open your terminal and start the Dev Phone with `twilio dev-phone`.
+
+After starting up, the terminal will tell you the address of the Dev Phone interface, usually `https://localhost:3001`. Go here in your browser to use the Dev Phone.
+
+From here, you can select a phone number. Choose the number that you didn't use in the previous step. The Dev Phone will then show you a dialler to call a number. Enter your other phone number, the one with the TwiML bin, and hit call. You should hear "Hello World" spoken back to you.
+
+## Step 4: Daily challenge complete! Time to submit.
+
+You've completed day 2, high five! To submit, take a screenshot of your Dev Phone call history.
+
+## Day 3: Make your first outbound phone call using `curl`.
 
 Today you will:
 
 - Create a TwiML bin that contains a script for a phone call.
-- Learn how to use CuRL to make HTTP requests.
-- Make a call from your Twilio number to your DevPhone.
+- Learn how to use `curl` to make HTTP requests.
+- Make a call from your Twilio number to your Dev Phone.
 
 ## Day 4: Setting up a web application with ngrok and webhooks.
 
@@ -95,7 +171,7 @@ Today you will:
 
 - Add an endpoint to your web application to handle Twilio webhooks.
 - Handle a webhook containing an SMS message.
-- Send your first SMS from the DevPhone.
+- Send your first SMS from the Dev Phone.
 
 ## Day 6: Replying to SMS messages with our web application.
 
@@ -103,7 +179,7 @@ Today you will:
 
 - Write TwiML to respond to a text message.
 - Return that TwiML in response to a webhook.
-- Receive your reply on the DevPhone.
+- Receive your reply on the Dev Phone.
 
 ## Day 7: Join Twilio Field Operators to keep learning!
 
