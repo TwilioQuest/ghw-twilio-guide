@@ -231,11 +231,42 @@ Congratulations on completing the day 3 challenge! To submit, take a screenshot 
 
 ## Day 4: Setting up a web application with ngrok and webhooks.
 
+So far, we have used Twilio via TwiML bins and `curl`. That makes it really easy to experiment with the API or to complete small tasks, like forwarding a number, but at some point you might want to use Twilio in a bigger application. Over the next three days, we'll learn to use Twilio from a Node.js or Python web application.
+
 Today you will:
 
 - Set up a basic Node.js or Python web application.
 - Download ngrok to make the application accessible from the web.
 - Set up a Twilio webhook to the application.
+
+### Step 1: Create a Node.js or Python web application
+
+Node.js `express` and Python `flask` are both great choices for web applications. Follow the guides below to create an application in whichever you prefer:
+
+- [Node.js](https://www.twilio.com/docs/usage/tutorials/how-to-set-up-your-node-js-and-express-development-environment)
+- [Python](https://www.twilio.com/docs/usage/tutorials/how-to-set-up-your-python-and-flask-development-environment)
+
+### Step 2: Install ngrok
+
+To use Twilio with our web application, Twilio will have to be able to send a HTTP request to the application.
+
+When we create a web application on our own machine, it will use the `localhost` URL. This is a URL accessible only from the machine, usually for testing purposes, and so will be inaccessible to Twilio. We can expose our web applications to the internet, but it can be complicated, and insecure once we're done. `ngrok` is an easier way to expose our web applications to the internet, temporarily.
+
+If you followed the guides in step 1, you may have seen instructions to install `ngrok` already. Continue following those instructions. `ngrok` has recently made some changes in a newer version, if you experience any problems, check out [this guide](https://www.twilio.com/blog/using-ngrok-2022).
+
+### Step 3: Set your Twilio webhook
+
+When you have installed and started `ngrok`, it will create a URL for your application. This is the URL that Twilio will be able to reach.
+
+We will use this URL to set what is called a "webhook". This is a HTTP request that Twilio will send in response to an event. For the rest of the week, we are going to be adding the ability to receive and reply to SMS messages to our application, so the event we will want to set a webhook for is when a new message is received.
+
+Go to your [Twilio console](https://console.twilio.com), and go to the settings for your Twilio number, in "Phone Numbers" -> "Manage" -> "Active numbers". Find the "Messaging" section, and look for the dropdown that says "When a message comes in". Select "Webhook", and insert your URL in the box. Save your settings.
+
+With your web application and ngrok running, if you now send a message to your Twilio number, you will see a request come from Twilio to your web app. This won't do anything yet, as we haven't written the code to handle the request. That's a job for tomorrow!
+
+### Step 4: Daily challenge complete! Time to submit.
+
+Congratulations on completing day 4, high five! To submit, take a screenshot of your `ngrok` or application terminal showing the receipt of a request from Twilio.
 
 ## Day 5: Receiving SMS messages with our web application.
 
