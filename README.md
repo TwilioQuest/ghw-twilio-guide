@@ -115,7 +115,7 @@ To install `curl`, follow [this guide](https://everything.curl.dev/get).
 
 ### Step 7: Daily challenge complete! Time to submit.
 
-You've completed the challenge for the day, high five! To submit the challenge, type `curl --version` into your terminal, and submit a screenshot.
+You've completed the challenge for the day, high five! To submit the challenge, type `curl --version` into your terminal, and submit a screenshot [on the DevPost](https://ghw-init-day-1.devpost.com/)
 
 ## Day 2: Receive your first phone call using TwiML bins and Dev Phone.
 
