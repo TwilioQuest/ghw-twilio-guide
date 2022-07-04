@@ -113,6 +113,8 @@ You can learn more about `curl` [here](https://curl.se/).
 
 To install `curl`, follow [this guide](https://everything.curl.dev/get).
 
+`curl` comes pre-installed on Windows, and can be accessed through Powershell. Use `curl.exe` when giving commands, i.e. `curl.exe --version`.
+
 ### Step 7: Daily challenge complete! Time to submit.
 
 You've completed the challenge for the day, high five! To submit the challenge, type `curl --version` into your terminal, and submit a screenshot [on the DevPost](https://ghw-init-day-1.devpost.com/)
