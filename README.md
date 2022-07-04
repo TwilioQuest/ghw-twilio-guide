@@ -149,7 +149,7 @@ From here, you can select a phone number. Choose the number that you didn't use 
 
 ### Step 4: Daily challenge complete! Time to submit.
 
-You've completed day 2, high five! To submit, take a screenshot of your Dev Phone call history.
+You've completed day 2, high five! To submit, take a screenshot of your Dev Phone call history and submit to [DevPost](https://hackp.ac/dailydevpost).
 
 ## Day 3: Make your first outbound phone call using `curl`.
 
