@@ -270,19 +270,108 @@ Congratulations on completing day 4, high five! To submit, take a screenshot of 
 
 ## Day 5: Receiving SMS messages with our web application.
 
+The web application we created yesterday does not currently handle the webhook from Twilio. Today we will add a new endpoint to handle the webhook, and receive SMS messages.
+
 Today you will:
 
 - Add an endpoint to your web application to handle Twilio webhooks.
 - Handle a webhook containing an SMS message.
 - Send your first SMS from the Dev Phone.
 
+### Step 1: Add a new endpoint
+
+The Twilio webhook will be a `POST` request, so we will need to add a handler for `POST` requests. The below tutorials contain code samples you can use for Node.js and Python:
+
+- [Node.js](https://www.twilio.com/blog/2017/10/how-to-receive-and-respond-to-a-text-message-with-node-js-express-and-twilio.html)
+- [Python](https://www.twilio.com/blog/2016/09/how-to-receive-and-respond-to-a-text-message-with-python-flask-and-twilio.html)
+
+In Node.js, the endpoint starts with:
+
+```
+app.post('/sms', (req, res) => {
+```
+
+In Python, it starts with:
+
+```
+@app.route('/sms', methods=['POST'])
+```
+
+Note the `/sms` in both versions. You will need to add `/sms` to the end of the URL in your webhook configuration for your phone number.
+
+### Step 2: Getting the message contents
+
+Once you have added the `/sms` POST endpoint to your application, you will be able to receive POST requests. A POST request has a body that contains the information sent with the request. The request we are receiving is from Twilio, telling us about a message we have received. The body will contain information about that message.
+
+Let's get the sender and the message contents out of the request. Add the following to your `/sms` endpoint:
+
+**Node.js**
+
+```
+let number = req.body.From;
+let messageBody = req.body.Body;
+
+console.log(`Message from ${number}, containing ${messageBody}`);
+``
+
+**Python**
+```
+
+number = request.form['From']
+message_body = request.form['Body']
+
+print('Message from {}, with contents: {}'.format(number, message_body))
+
+```
+
+These snippets get the information we're interested in our of the request object, and then print them to the terminal.
+
+### Step 3: Send an SMS from the Dev Phone
+
+Make sure your web application is running without errors, that ngrok is started, and that your phone number in Twilio has the full ngrok URL ending with `/sms`. Then enter your Twilio number in Dev Phone, and send a message!
+
+In the terminal with the running web application, you should see output containing the sender number and the message body.
+
+### Step 4: Daily challenge complete, time to submit!
+
+Congratulations on completing day 5! To submit the challenge, take a screenshot of your terminal showing the output of receiving a message.
+
 ## Day 6: Replying to SMS messages with our web application.
+
+Yesterday we pulled information out of a message we received. Today we will reply to the message! If you followed the linked tutorials yesterday, you may have already done this. If not, it will be a quick addition.
 
 Today you will:
 
 - Write TwiML to respond to a text message.
 - Return that TwiML in response to a webhook.
 - Receive your reply on the Dev Phone.
+
+### Step 1: Writing a response
+
+**Node.js:**
+```
+
+// Start our TwiML response.
+const twiml = new MessagingResponse();
+
+// Add a text message.
+const msg = twiml.message(`Hello ${name}, you sent ${messageBody}`);
+
+res.writeHead(200, {'Content-Type': 'text/xml'});
+res.end(twiml.toString());
+
+```
+
+**Python:**
+```
+
+resp = twiml.Response()
+resp.message('Hello {}, you said: {}'.format(number, message_body))
+return str(resp)
+
+```
+
+
 
 ## Day 7: Join Twilio Field Operators to keep learning!
 
@@ -297,3 +386,4 @@ Thanks for hacking with Twilio during INIT! Keep learning with Twilio Field Oper
 ## I have completed TwilioQuest in the past, can I still win a prize on the leaderboard?
 
 ## My Twilio account was suspended
+```
