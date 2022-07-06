@@ -113,9 +113,11 @@ You can learn more about `curl` [here](https://curl.se/).
 
 To install `curl`, follow [this guide](https://everything.curl.dev/get).
 
+`curl` comes pre-installed on Windows, and can be accessed through Powershell. Use `curl.exe` when giving commands, i.e. `curl.exe --version`.
+
 ### Step 7: Daily challenge complete! Time to submit.
 
-You've completed the challenge for the day, high five! To submit the challenge, type `curl --version` into your terminal, and submit a screenshot.
+You've completed the challenge for the day, high five! To submit the challenge, type `curl --version` into your terminal, and submit a screenshot [on the DevPost](https://ghw-init-day-1.devpost.com/)
 
 ## Day 2: Receive your first phone call using TwiML bins and Dev Phone.
 
@@ -147,7 +149,7 @@ From here, you can select a phone number. Choose the number that you didn't use 
 
 ### Step 4: Daily challenge complete! Time to submit.
 
-You've completed day 2, high five! To submit, take a screenshot of your Dev Phone call history.
+You've completed day 2, high five! To submit, take a screenshot of your Dev Phone call history and submit to [DevPost](https://hackp.ac/dailydevpost).
 
 ## Day 3: Make your first outbound phone call using `curl`.
 
