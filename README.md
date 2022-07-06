@@ -314,9 +314,10 @@ let number = req.body.From;
 let messageBody = req.body.Body;
 
 console.log(`Message from ${number}, containing ${messageBody}`);
-``
+```
 
 **Python**
+
 ```
 
 number = request.form['From']
@@ -351,6 +352,7 @@ Today you will:
 ### Step 1: Writing a response
 
 **Node.js:**
+
 ```
 
 // Start our TwiML response.
@@ -365,6 +367,7 @@ res.end(twiml.toString());
 ```
 
 **Python:**
+
 ```
 
 resp = twiml.Response()
@@ -372,8 +375,6 @@ resp.message('Hello {}, you said: {}'.format(number, message_body))
 return str(resp)
 
 ```
-
-
 
 ## Day 7: Join Twilio Field Operators to keep learning!
 
@@ -388,4 +389,7 @@ Thanks for hacking with Twilio during INIT! Keep learning with Twilio Field Oper
 ## I have completed TwilioQuest in the past, can I still win a prize on the leaderboard?
 
 ## My Twilio account was suspended
+
+```
+
 ```
