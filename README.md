@@ -384,12 +384,16 @@ Thanks for hacking with Twilio during INIT! Keep learning with Twilio Field Oper
 
 ## I have an existing account with Twilio credit, what do I do?
 
+If that account is a trial account, using the upgrade code will replace your trial credit with $25 of real credit. If you have trial credit you want to use, it's recommended you use this before using the upgrade code.
+
 ## I have completed TwilioQuest in the past, can I do the weekly challenge?
 
-## I have completed TwilioQuest in the past, can I still win a prize on the leaderboard?
+Please do not participate in the TwilioQuest leaderboard if you have completed TwilioQuest in the past. Twilio runs multiple challenges during GHW:INIT so that everyone can take part, even if they have previously completed a challenge.
+
+## What is the maximum XP earnable in TwilioQuest? What is in the TwilioQuest Prize Pack? What happens if there's a draw?
+
+We don't want to spoil the surprise :)
 
 ## My Twilio account was suspended
 
-```
-
-```
+Please contact a Twilio team member in the Twilio channel in the GHW Discord.
