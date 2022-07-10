@@ -424,7 +424,7 @@ return str(resp)
 
 ## Day 7: Join Twilio Field Operators to keep learning!
 
-Thanks for hacking with Twilio during INIT! Keep learning with Twilio Field Operators.
+Thanks for hacking with Twilio during INIT! Keep learning with Twilio [Field Operators](https://twilio.com/quest/students).
 
 # Frequently Asked Questions
 
