@@ -1,9 +1,9 @@
-# Getting started with Twilio at MLH Init
+# Getting started with Twilio at Global Hack Week
 
-Hello hackers! Learn how to use REST APIs with Twilio during INIT by following the steps in this repository. You can submit the challenges each day at [https://init.mlh.io](https://init.mlh.io). In this README, you will find instructions to follow for each day.
+Hello hackers! Learn how to use REST APIs with Twilio during Global Hack Week by following the steps in this repository. You can submit the challenges each day at [https://ghw.mlh.io](https://ghw.mlh.io). In this README, you will find instructions to follow for each day.
 
 ## Contents
-- [Getting started with Twilio at MLH Init](#getting-started-with-twilio-at-mlh-init)
+- [Getting started with Twilio at Global Hack Week](#getting-started-with-twilio-at-global-hack-week)
   - [Contents](#contents)
   - [Getting Help](#getting-help)
 - [Weekly challenge](#weekly-challenge)
@@ -52,7 +52,7 @@ Hello hackers! Learn how to use REST APIs with Twilio during INIT by following t
   - [My Twilio account was suspended](#my-twilio-account-was-suspended)
 ## Getting Help
 
-If you have questions about Twilio or the MLH Init challenges, visit the `#twilio` channel in the [MLH Discord](https://discord.mlh.io/).
+If you have questions about Twilio or the Global Hack Week challenges, visit the `#twilio` channel in the [MLH Discord](https://discord.mlh.io/).
 
 # Weekly challenge
 
@@ -75,7 +75,7 @@ Once you have downloaded TwilioQuest, here are the steps you need to complete to
 - Join the TwilioQuest operation.
   - Open settings by clicking on the icon of 3 sliders at the top of the screen.
   - On the left, select "Operations".
-  - In the join code box, enter the code ` birds-popular-indeed`, and click "Join Operation".
+  - In the join code box, enter the code `fire-try-solve`, and click "Join Operation".
   - Your character and XP will now be visible in the [leaderboard](https://www.twilio.com/quest/app/operations/Q1VJoMy3sCQCjADG1MrA).
 - Complete a mission, from any of the following:
   - The Javascript Test Lab
@@ -88,7 +88,7 @@ Once you have downloaded TwilioQuest, here are the steps you need to complete to
 
 ## Winning a TwilioQuest Prize Pack
 
-The top 5 players by XP on the leaderboard at the end of INIT will win a special TwilioQuest prize pack. Earn XP by completing more missions!
+The top 5 players by XP on the leaderboard at the end of Global Hack Week will win a special TwilioQuest prize pack. Earn XP by completing more missions!
 
 # Daily challenges
 
@@ -100,7 +100,7 @@ A REST API allows software programs to expose functionality and data to other pr
 
 Twilio is an example of a REST API. Twilio's communication APIs let you do things like send text messages and emails, make phone calls, and stream video. You can see all of the things you can do with Twilio on the [Twilio docs](https://www.twilio.com/docs).
 
-During MLH INIT, you will learn how to **send and receive text messages** and **make and receive phone calls** with Twilio.
+During Global Hack Week, you will learn how to **send and receive text messages** and **make and receive phone calls** with Twilio.
 
 ## Day 1: Get ready to hack with Twilio.
 
@@ -117,14 +117,14 @@ If you don't already have a Twilio account, create one by visiting [this link](h
 
 ### Step 2: Upgrading your account
 
-When you create an account with the above link, you will create a trial account. To complete the Twilio challenges during INIT, you will need to use 2 Twilio numbers, which requires an upgraded account. To upgrade your account:
+When you create an account with the above link, you will create a trial account. To complete the Twilio challenges during Global Hack Week, you will need to use 2 Twilio numbers, which requires an upgraded account. To upgrade your account:
 
 - Visit the #twilio channel in the MLH Discord.
 - Check the pinned messages for the channel.
 - Find the promo code shared in the pinned message.
 - Follow [this guide](https://www.twilio.com/blog/apply-promo-code) to apply the promo code to your account.
 
-When you use this code, you will also get some free credit. If you did not create a new account, and are using an account you created in the past, you can still use this code to get extra credit to complete the INIT daily challenge.
+When you use this code, you will also get some free credit. If you did not create a new account, and are using an account you created in the past, you can still use this code to get extra credit to complete the Global Hack Week daily challenge.
 
 ### Step 3: Buy Two Twilio numbers
 
@@ -163,7 +163,7 @@ To install `curl`, follow [this guide](https://everything.curl.dev/get).
 
 ### Step 7: Daily challenge complete! Time to submit.
 
-You've completed the challenge for the day, high five! To submit the challenge, type `curl --version` into your terminal, and submit a screenshot [on the DevPost](https://ghw-init-day-1.devpost.com/)
+You've completed the challenge for the day, high five! To submit the challenge, type `curl --version` into your terminal, and submit a screenshot [on the DevPost]()
 
 ## Day 2: Receive your first phone call using TwiML bins and Dev Phone.
 
@@ -424,7 +424,7 @@ return str(resp)
 
 ## Day 7: Join Twilio Field Operators to keep learning!
 
-Thanks for hacking with Twilio during INIT! Keep learning with Twilio [Field Operators](https://twilio.com/quest/students).
+Thanks for hacking with Twilio during Global Hack Week! Keep learning with Twilio [Field Operators](https://twilio.com/quest/students).
 
 # Frequently Asked Questions
 
@@ -434,7 +434,7 @@ If that account is a trial account, using the upgrade code will replace your tri
 
 ## I have completed TwilioQuest in the past, can I do the weekly challenge?
 
-Please do not participate in the TwilioQuest leaderboard if you have completed TwilioQuest in the past. Twilio runs multiple challenges during GHW:INIT so that everyone can take part, even if they have previously completed a challenge.
+Please do not participate in the TwilioQuest leaderboard if you have completed TwilioQuest in the past. Twilio runs multiple challenges during Global Hack Week so that everyone can take part, even if they have previously completed a challenge.
 
 ## What is the maximum XP earnable in TwilioQuest? What is in the TwilioQuest Prize Pack? What happens if there's a draw?
 
