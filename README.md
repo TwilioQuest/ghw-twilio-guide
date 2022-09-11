@@ -76,7 +76,7 @@ Once you have downloaded TwilioQuest, here are the steps you need to complete to
   - Open settings by clicking on the icon of 3 sliders at the top of the screen.
   - On the left, select "Operations".
   - In the join code box, enter the code `fire-try-solve`, and click "Join Operation".
-  - Your character and XP will now be visible in the [leaderboard](https://www.twilio.com/quest/app/operations/Q1VJoMy3sCQCjADG1MrA).
+  - Your character and XP will now be visible in the [leaderboard](https://www.twilio.com/quest/app/operations/mZQIBg449QmxkX7faoG6).
 - Complete a mission, from any of the following:
   - The Javascript Test Lab
   - The Pythonic Temple
@@ -163,7 +163,7 @@ To install `curl`, follow [this guide](https://everything.curl.dev/get).
 
 ### Step 7: Daily challenge complete! Time to submit.
 
-You've completed the challenge for the day, high five! To submit the challenge, type `curl --version` into your terminal, and submit a screenshot [on the DevPost]()
+You've completed the challenge for the day, high five! To submit the challenge, type `curl --version` into your terminal, and submit a screenshot [on the DevPost](https://ghw-september-day-2.devpost.com/)
 
 ## Day 2: Receive your first phone call using TwiML bins and Dev Phone.
 
