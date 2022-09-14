@@ -94,7 +94,7 @@ The top 5 players by XP on the leaderboard at the end of Global Hack Week will w
 
 ## What is an API? What is a REST API?
 
-An Application Programming Interface (API) is provided by a service owner so that others may use the features and functions enabled by the service. APIs describe how a consumer will make requests of the servuce, and what they will receive in return. [Read more](https://www.twilio.com/docs/glossary/what-is-an-api).
+An Application Programming Interface (API) is provided by a service owner so that others may use the features and functions enabled by the service. APIs describe how a consumer will make requests of the service, and what they will receive in return. [Read more](https://www.twilio.com/docs/glossary/what-is-an-api).
 
 A REST API allows software programs to expose functionality and data to other programs over the Internet in a consistent format. Generally speaking, when people use the term REST API, they are referring to an API that is accessed via the HTTP protocol at a predefined set of URLs (uniform resource locators) representing the various resources with which interactions can occur. [Read more](https://www.twilio.com/docs/glossary/what-is-a-rest-api).
 
