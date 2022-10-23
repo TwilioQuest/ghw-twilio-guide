@@ -88,7 +88,7 @@ Once you have downloaded TwilioQuest, here are the steps you need to complete to
 
 ## Winning a TwilioQuest Prize Pack
 
-The top 5 players by XP on the leaderboard at the end of Global Hack Week will win a special TwilioQuest prize pack. Earn XP by completing more missions!
+All players who earn at least 5000 XP in TwilioQuest by the end of Global Hack Week will be entered into a prize draw for a special TwilioQuest swag pack! Up to 5 winners will be chosen. Earn XP by completing TwilioQuest missions!
 
 # Daily challenges
 
