@@ -58,7 +58,7 @@ If you have questions about Twilio or the Global Hack Week challenges, visit the
 
 ## Summary
 
-Twilio's weekly challenge is to play and learn with [TwilioQuest](https://twilio.com/quest). To complete the weekly challenge, simply download TwilioQuest, join the leaderboard, and play at least one mission. If you want to be in with a chance of winning a special TwilioQuest prize pack, rank top 5 in the leaderboard. Read on to learn more!
+Twilio's weekly challenge is to play and learn with [TwilioQuest](https://twilio.com/quest). To complete the weekly challenge, simply download TwilioQuest, join the leaderboard, and play at least one mission. If you want to be in with a chance of winning a special TwilioQuest prize pack, earn at least 5000 XP. Read on to learn more!
 
 ## What is TwilioQuest?
 
@@ -75,8 +75,8 @@ Once you have downloaded TwilioQuest, here are the steps you need to complete to
 - Join the TwilioQuest operation.
   - Open settings by clicking on the icon of 3 sliders at the top of the screen.
   - On the left, select "Operations".
-  - In the join code box, enter the code `fire-try-solve`, and click "Join Operation".
-  - Your character and XP will now be visible in the [leaderboard](https://www.twilio.com/quest/app/operations/mZQIBg449QmxkX7faoG6).
+  - In the join code box, enter the code `hollow-hurry-travel`, and click "Join Operation".
+  - Your character and XP will now be visible in the [leaderboard](https://www.twilio.com/quest/app/operations/BJu2r7UErVtj9MHTpPMA).
 - Complete a mission, from any of the following:
   - The Javascript Test Lab
   - The Pythonic Temple
