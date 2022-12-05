@@ -75,7 +75,7 @@ Once you have downloaded TwilioQuest, here are the steps you need to complete to
 - Join the TwilioQuest operation.
   - Open settings by clicking on the icon of 3 sliders at the top of the screen.
   - On the left, select "Operations".
-  - In the join code box, enter the code `hollow-hurry-travel`, and click "Join Operation".
+  - In the join code box, enter the code `condition-count-grew`, and click "Join Operation".
   - Your character and XP will now be visible in the [leaderboard](https://www.twilio.com/quest/app/operations/BJu2r7UErVtj9MHTpPMA).
 - Complete a mission, from any of the following:
   - The Javascript Test Lab
