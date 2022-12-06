@@ -177,11 +177,11 @@ Today you will:
 
 ### Step 1: Create a TwiML bin to handle a phone call
 
-A TwiML bin is a container for TwiML. We can fill the bin with TwiML to program Twilio to do certain actions, and then connect the bin to our phone number. Follow the instructions [here](https://www.twilio.com/docs/runtime/tutorials/twiml-bins#create-a-new-twiml-bin) to create a new TwiML bin to respond to a phone call with "hello world".
+A TwiML bin is a container for TwiML. We can fill the bin with TwiML to program Twilio to do certain actions, and then connect the bin to our phone number. Follow the instructions [here](https://www.twilio.com/docs/serverless/twiml-bins/getting-started#create-a-new-twiml-bin) to create a new TwiML bin to respond to a phone call with "hello world".
 
 ### Step 2: Link your TwiML bin to your Twilio number
 
-Now that we have some TwiML to say "hello world", we need to connect it to our phone number. Choose one of the two numbers you purchased in day 1, and follow [this guide](https://www.twilio.com/docs/runtime/tutorials/twiml-bins#wire-your-twiml-bin-up-to-an-incoming-phone-call) to do that.
+Now that we have some TwiML to say "hello world", we need to connect it to our phone number. Choose one of the two numbers you purchased in day 1, and follow [this guide](https://www.twilio.com/docs/serverless/twiml-bins/getting-started#wire-your-twiml-bin-up-to-an-incoming-phone-call) to do that.
 
 Remember which number you chose! In the next step, we will use the other number.
 
