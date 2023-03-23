@@ -6,11 +6,6 @@ Hello hackers! Learn how to use REST APIs with Twilio during Global Hack Week by
 - [Getting started with Twilio at Global Hack Week](#getting-started-with-twilio-at-global-hack-week)
   - [Contents](#contents)
   - [Getting Help](#getting-help)
-- [Weekly challenge](#weekly-challenge)
-  - [Summary](#summary)
-  - [What is TwilioQuest?](#what-is-twilioquest)
-  - [Completing the weekly challenge](#completing-the-weekly-challenge)
-  - [Winning a TwilioQuest Prize Pack](#winning-a-twilioquest-prize-pack)
 - [Daily challenges](#daily-challenges)
   - [What is an API? What is a REST API?](#what-is-an-api-what-is-a-rest-api)
   - [Day 1: Get ready to hack with Twilio.](#day-1-get-ready-to-hack-with-twilio)
@@ -47,48 +42,10 @@ Hello hackers! Learn how to use REST APIs with Twilio during Global Hack Week by
   - [Day 7: Join Twilio Field Operators to keep learning!](#day-7-join-twilio-field-operators-to-keep-learning)
 - [Frequently Asked Questions](#frequently-asked-questions)
   - [I have an existing account with Twilio credit, what do I do?](#i-have-an-existing-account-with-twilio-credit-what-do-i-do)
-  - [I have completed TwilioQuest in the past, can I do the weekly challenge?](#i-have-completed-twilioquest-in-the-past-can-i-do-the-weekly-challenge)
-  - [What is the maximum XP earnable in TwilioQuest? What is in the TwilioQuest Prize Pack? What happens if there's a draw?](#what-is-the-maximum-xp-earnable-in-twilioquest-what-is-in-the-twilioquest-prize-pack-what-happens-if-theres-a-draw)
   - [My Twilio account was suspended](#my-twilio-account-was-suspended)
 ## Getting Help
 
 If you have questions about Twilio or the Global Hack Week challenges, visit the `#twilio` channel in the [MLH Discord](https://discord.mlh.io/).
-
-# Weekly challenge
-
-## Summary
-
-Twilio's weekly challenge is to play and learn with [TwilioQuest](https://twilio.com/quest). To complete the weekly challenge, simply download TwilioQuest, join the leaderboard, and play at least one mission. If you want to be in with a chance of winning a special TwilioQuest prize pack, earn at least 5000 XP. Read on to learn more!
-
-## What is TwilioQuest?
-
-TwilioQuest is a free game that helps you learn to code. With TwilioQuest, you can learn Node.js, Python, Open source with Git & GitHub, REST APIs, and Twilio. In TwilioQuest, you learn by completing objectives, which are short tutorials with challenges. Each challenge earns you XP and items for your character.
-
-You can download TwilioQuest for Windows, Linux, MacOS, and Raspberry Pi [here](https://twilio.com/quest/download).
-
-## Completing the weekly challenge
-
-Once you have downloaded TwilioQuest, here are the steps you need to complete to submit the weekly challenge:
-
-- Launch TwilioQuest.
-  - If this is your first time playing TwilioQuest, you will see an intro cinematic, create a character, and complete the tutorial prologue.
-- Join the TwilioQuest operation.
-  - Open settings by clicking on the icon of 3 sliders at the top of the screen.
-  - On the left, select "Operations".
-  - In the join code box, enter the code `condition-count-grew`, and click "Join Operation".
-  - Your character and XP will now be visible in the [leaderboard](https://www.twilio.com/quest/app/operations/FmqLVJPHqU6KYzZwc8Za).
-- Complete a mission, from any of the following:
-  - The Javascript Test Lab
-  - The Pythonic Temple
-  - The API Academy
-  - The Forest of Open Source
-  - Programmable Voice or Programmable SMS
-    - You will have to complete API Setup to do either of these missions.
-  - The Ducktypium Forge
-
-## Winning a TwilioQuest Prize Pack
-
-All players who earn at least 5000 XP in TwilioQuest by the end of Global Hack Week will be entered into a prize draw for a special TwilioQuest swag pack! Up to 5 winners will be chosen. Earn XP by completing TwilioQuest missions!
 
 # Daily challenges
 
@@ -422,23 +379,16 @@ return str(resp)
 
 ```
 
-## Day 7: Join Twilio Field Operators to keep learning!
+## Day 7: Deploy from the Twilio Code Exchange
 
-Thanks for hacking with Twilio during Global Hack Week! Keep learning with Twilio [Field Operators](https://twilio.com/quest/students).
+CodeExchange makes it easy to get started with any app. It’s a searchable directory of customizable code samples, written by developers around the world, vetted by Twilio experts, and ready for you to use. We can’t wait to see what you build using CodeExchange code samples. Go ahead and get started by checking it out now. Pick one of the Applications and deploy it to your Twilio account.
+[Twilio Code Exchange](https://www.twilio.com/code-exchange?q=&f=serverless).
 
 # Frequently Asked Questions
 
 ## I have an existing account with Twilio credit, what do I do?
 
 If that account is a trial account, using the upgrade code will replace your trial credit with $25 of real credit. If you have trial credit you want to use, it's recommended you use this before using the upgrade code.
-
-## I have completed TwilioQuest in the past, can I do the weekly challenge?
-
-Please do not participate in the TwilioQuest leaderboard if you have completed TwilioQuest in the past. Twilio runs multiple challenges during Global Hack Week so that everyone can take part, even if they have previously completed a challenge.
-
-## What is the maximum XP earnable in TwilioQuest? What is in the TwilioQuest Prize Pack? What happens if there's a draw?
-
-We don't want to spoil the surprise :)
 
 ## My Twilio account was suspended
 
