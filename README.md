@@ -39,7 +39,7 @@ Hello hackers! Learn how to use REST APIs with Twilio during Global Hack Week by
     - [Step 4: Daily challenge complete, time to submit!](#step-4-daily-challenge-complete-time-to-submit-2)
   - [Day 6: Replying to SMS messages with our web application.](#day-6-replying-to-sms-messages-with-our-web-application)
     - [Step 1: Writing a response](#step-1-writing-a-response)
-  - [Day 7: Join Twilio Field Operators to keep learning!](#day-7-join-twilio-field-operators-to-keep-learning)
+  - [Day 7: Deploy from the Twilio Code Exchange](#day-7-deploy-from-the-twilio-code-exchange)
 - [Frequently Asked Questions](#frequently-asked-questions)
   - [I have an existing account with Twilio credit, what do I do?](#i-have-an-existing-account-with-twilio-credit-what-do-i-do)
   - [My Twilio account was suspended](#my-twilio-account-was-suspended)
